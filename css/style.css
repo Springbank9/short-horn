@@ -14,6 +14,13 @@ a {
   margin: 0 auto;
   background: #e9e9e9;
 }
+
+#header-menu {
+  height: 82px;
+  position: fixed;
+  width:100%;
+  z-index:99;
+}
 .menu a.logo {
     display: inline-block;
     padding: 1.5em 3em;
@@ -111,12 +118,12 @@ a {
 .menu > ul > li > ul > li a {
   color: #777;
   padding: .2em 0;
-  width: 95%;
+  width: 100%;
   display: block;
   border-bottom: 1px solid #ccc;
 }
 .menu > ul > li > ul > li a:hover{
-	color:#03a9f4;
+	color:black;
 }
 .menu > ul > li > ul > li > ul {
   display: block;
@@ -212,4 +219,117 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: Georgia;
+  font-weight: 100;
+  margin: 10px;
+  
+}
+
+p {
+  font-family: Georgia;
+  font-style: italic;
+  text-shadow: 1px 1px #000;
+}
+
+
+.hero-image {
+  background-image: url("/images/ptarmigan.jpg");
+  opacity: 0.9;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-top:0px;
+  height: 500px;
+  background-color: #F0F0F0;
+  padding: 10px 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 100;
+}
+
+.hero-text button {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  display: inline-block;
+  padding: 12px 35px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid white;
+  margin-left: -1px;
+  margin-top: 5%;
+  font-size: 8pt;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: Geogia;
+}
+
+
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
+
+
+section {
+  height: 600px;
 }
