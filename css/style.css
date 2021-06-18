@@ -18,7 +18,7 @@ a {
 }
 
 #header-menu {
-  height: 200px;
+  height: 90px;
   position: fixed;
   width:100%;
   z-index:99;
@@ -210,7 +210,7 @@ Mobile style's
   .menu > ul > li > ul > li {
     float: none;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .menu > ul > li > ul > li:first-child {
     margin: 0;
@@ -248,16 +248,15 @@ p {
 .hero-image {
   background-image: url("/images/herd.jpg");
   opacity: 0.9;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
-  margin-top:30px;
-  height: 500px;
+  margin-top:0px;
   background-color: #F0F0F0;
-  padding: 10px 0;
+  padding: 0;
   background-size: cover;
   background-attachment: absolute;
 }
@@ -265,7 +264,7 @@ p {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -336,5 +335,5 @@ a:active {
 
 
 section {
-  height: 600px;
+  height: 1200px;
 }
