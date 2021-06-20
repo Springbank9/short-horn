@@ -337,3 +337,31 @@ a:active {
 section {
   height: 1200px;
 }
+
+#video-background {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            overflow: hidden;
+            z-index: 1;
+            width: 100%;
+        }
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.btn  {
+    background-color: transparent;
+    color: white;
+}
